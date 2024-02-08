@@ -65,4 +65,5 @@ int main()
     }
     loop=is_valid("continue?\nn to stop and y to continue\n","n","y");
   }
+  return 0;
 }
