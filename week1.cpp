@@ -15,7 +15,7 @@ std::string is_valid(std::string text_out, std::string str_1, std::string str_2)
     std::cin.clear();
     std::cin.ignore();
     std::cout<<"enter valid value: ";
-  // Clear fail bit and ignore bad input
+    // Clear fail bit and ignore bad input
     std::cin>>temp;
   }
   return temp;
@@ -24,7 +24,6 @@ int is_valid(std::string text_out)
 {
   //To check if input is valid for int input
   int temp;
-  {
   std::cout<<text_out;
   std::cin>>temp;
   while(std::cin.fail())
@@ -34,7 +33,6 @@ int is_valid(std::string text_out)
     std::cout<<"enter valid value: ";
     // Clear fail bit and ignore bad input
     std::cin>>temp;
-  }
   }
   return temp;
 }
