@@ -33,7 +33,7 @@ int is_valid(std::string text_out)
     std::cin.ignore();
     std::cout<<"enter valid value: ";
     // Clear fail bit and ignore bad input
-      std::cin>>temp;
+    std::cin>>temp;
   }
   }
   return temp;
@@ -42,9 +42,9 @@ int main()
 {
   //main function
   std::cout<<"Eij = 13.6*Z^2*(nj^(-2)-ni^(-2))eV"<<std::endl;
-   std::string loop;
-   loop="y";
-   while(loop=="y")
+  std::string loop;
+  loop="y";
+  while(loop=="y")
   {
     int    Z;
     Z=is_valid("Z=");
@@ -67,5 +67,4 @@ int main()
     }
     loop=is_valid("continue?\nn to stop and y to continue\n","n","y");
   }
-  return 0;
 }
